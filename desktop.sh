@@ -36,6 +36,4 @@ mv ~/.config/alacritty/compton.conf ~/.config/compton
 #compton --config ~/.config/compton/compton.conf
 
 echo "Desktop environment done!"
-
-exec bash
 }

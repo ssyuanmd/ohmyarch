@@ -6,6 +6,7 @@ yes | sudo pacman -Syu
 	"alsa-utils"
 	"base-devel"
 	"cowsay"
+	"clang"
 	"firefox"
 	"fcitx-im"
 	"fcitx-configtool"
@@ -47,6 +48,4 @@ export QT_IM_MODULE=fcitx
 export XMODIFIERS=@im=fcitx
 " > ~/.xprofile
 fcitx-configtool
-
-exec bash
 }

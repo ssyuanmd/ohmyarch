@@ -9,9 +9,6 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
 
 mkdir ~/library
 
-# c
-yes | pacman -Sy clang
-
 # lua
 git clone https://github.com/sumneko/lua-language-server ~/library/lua-language-server
 cd ~/library/lua-language-server
