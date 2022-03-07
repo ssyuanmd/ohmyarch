@@ -1,7 +1,6 @@
 #!/bin/bash
 install_neovim() {
 cowsay "neovim"
-yes | yay -Sy nvim-packer-git
 git clone https://github.com/ssyuanmd/neovim ~/.config/nvim
 
 # packer
@@ -20,7 +19,7 @@ cd ../..
 ./3rd/luamake/luamake rebuild
 
 # java
-git clone https://github.com/eclipse/eclipse.jdt.ls ~/library
+git clone https://github.com/eclipse/eclipse.jdt.ls ~/library/java
 
 exec bash
 }
