@@ -13,7 +13,7 @@ mv ~/.config/alacritty/.bashrc ~/
 sudo mv ~/.config/alacritty/MonoLisa* /usr/share/fonts
 
 #xmodmap
-sudo mv ~/.config/alacritty/.xmod* ../
+sudo mv ~/.config/alacritty/.xmod* ~/
 
 # dwm
 cowsay "dwm"
@@ -21,7 +21,10 @@ git clone git://git.suckless.org/dwm ~/.config/dwm
 cd ~/.config/dwm && sudo make install
 printf "#!/bin/bash
 exec fcitx &
-exec dwm" > ~/.xinitrc
+exec dwm
+~/ohmyarch/script/wallpaper.sh &
+~/ohmyarch/script/compton.sh &
+" > ~/.xinitrc
 cat ~/.xinitrc
 sleep 12
 
@@ -33,7 +36,6 @@ tar -xvf ~/.config/alacritty/neon.tar -C ~/Desktop
 cowsay "compton"
 mkdir ~/.config/compton
 mv ~/.config/alacritty/compton.conf ~/.config/compton
-#compton --config ~/.config/compton/compton.conf
 
 echo "Desktop environment done!"
 }
