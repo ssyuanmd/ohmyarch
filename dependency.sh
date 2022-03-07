@@ -7,6 +7,7 @@ yes | sudo pacman -Syu
 	"base-devel"
 	"cowsay"
 	"clang"
+	"dmenu"
 	"firefox"
 	"fcitx-im"
 	"fcitx-configtool"
