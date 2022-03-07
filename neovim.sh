@@ -9,6 +9,9 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
 
 mkdir ~/library
 
+# c
+yes | pacman -Sy clang
+
 # lua
 git clone https://github.com/sumneko/lua-language-server ~/library/lua-language-server
 cd ~/.config/lua-language-server
@@ -19,7 +22,8 @@ cd ../..
 ./3rd/luamake/luamake rebuild
 
 # java
-git clone https://github.com/eclipse/eclipse.jdt.ls ~/library/java
+links https://download.eclipse.org/jdtls/milestones/1.9.0/
+yes | yay -Sy java-openjdk
 
 exec bash
 }

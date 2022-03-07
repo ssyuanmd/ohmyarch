@@ -6,7 +6,6 @@ yes | sudo pacman -Syu
 	"alsa-utils"
 	"base-devel"
 	"cowsay"
-	"clang"
 	"firefox"
 	"fcitx-im"
 	"fcitx-configtool"
