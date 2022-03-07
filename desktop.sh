@@ -20,10 +20,10 @@ cowsay "dwm"
 git clone git://git.suckless.org/dwm ~/.config/dwm
 cd ~/.config/dwm && sudo make install
 printf "#!/bin/bash
-exec fcitx &
-exec dwm
 ~/ohmyarch/script/wallpaper.sh &
 ~/ohmyarch/script/compton.sh &
+exec fcitx &
+exec dwm
 " > ~/.xinitrc
 cat ~/.xinitrc
 sleep 12
