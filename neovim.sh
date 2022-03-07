@@ -19,8 +19,10 @@ cd ../..
 ./3rd/luamake/luamake rebuild
 
 # java
-links https://download.eclipse.org/jdtls/milestones/1.9.0/
-yay -Sy java-openjdk
+yay -Sy jdk-openjdk
+cd ~/library
+links https://download.eclipse.org/jdtls/milestones/1.7.0/
+tar –xvzf *.tar.gz
 
 exec bash
 }

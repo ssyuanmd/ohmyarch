@@ -17,11 +17,12 @@ sudo mv ~/.config/alacritty/.xmod* ~/
 
 # dwm
 cowsay "dwm"
-git clone git://git.suckless.org/dwm ~/.config/dwm
+git clone http://github.com/ssyuanmd/dwm ~/.config/dwm
 cd ~/.config/dwm && sudo make install
 printf "#!/bin/bash
 ~/ohmyarch/script/wallpaper.sh &
 ~/ohmyarch/script/compton.sh &
+~/ohmyarch/script/statusbar.sh &
 exec fcitx &
 exec dwm
 " > ~/.xinitrc

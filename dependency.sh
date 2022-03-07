@@ -17,6 +17,7 @@ yes | sudo pacman -Syu
 	"htop"
 	"ranger"
 	"trash-cli"
+	"links"
 	"xorg-server"
 	"xorg-xinit"
 	"xorg-xrandr"
