@@ -14,7 +14,7 @@ yes | pacman -Sy clang
 
 # lua
 git clone https://github.com/sumneko/lua-language-server ~/library/lua-language-server
-cd ~/.config/lua-language-server
+cd ~/library/lua-language-server
 git submodule update --init --recursive
 cd 3rd/luamake
 ./compile/install.sh
@@ -23,7 +23,7 @@ cd ../..
 
 # java
 links https://download.eclipse.org/jdtls/milestones/1.9.0/
-yes | yay -Sy java-openjdk
+yay -Sy java-openjdk
 
 exec bash
 }

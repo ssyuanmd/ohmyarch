@@ -35,10 +35,10 @@ cowsay "AUR"
 git clone https://aur.archlinux.org/yay.git
 cd yay
 makepkg -si
-yes | yay -Sy compton-tryone
-yes | yay -Sy noto-fonts-sc
-yes | yay -Sy nerd-fonts-hack
-yes | yay -Sy nvim-packer-git
+yay -Sy compton-tryone
+yay -Sy noto-fonts-sc
+yay -Sy nerd-fonts-hack
+yay -Sy nvim-packer-git
 
 # fcitx
 cowsay "fcitx"
