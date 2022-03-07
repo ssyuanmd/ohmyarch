@@ -10,6 +10,7 @@ yes | sudo pacman -Syu
 	"firefox"
 	"fcitx-im"
 	"fcitx-configtool"
+	"ninja"
 	"fcitx-chewing"
 	"git"
 	"htop"
