@@ -20,9 +20,9 @@ cd ../..
 
 # java
 yay -Sy jdk-openjdk
-cd ~/library
+mkdir ~/library/java
+cd ~/library/java
 links https://download.eclipse.org/jdtls/milestones/1.7.0/
-tar –xvzf *.tar.gz
+tar -xvzf *.tar.gz
 
-exec bash
 }
