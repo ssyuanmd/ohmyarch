@@ -7,7 +7,6 @@ locale-gen
 # wheel ALL=(ALL) ALL
 pacman -Sy vim
 visudo
-pacman -R vim
 
 # network
 pacman -Sy networkmanager
