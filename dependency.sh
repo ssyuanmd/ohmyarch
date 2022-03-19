@@ -38,8 +38,11 @@ cowsay "AUR"
 git clone https://aur.archlinux.org/yay.git
 cd yay
 makepkg -si
-yay -Sy compton-tryone-git
-yay -Sy noto-fonts-sc
+#compton
+https://github.com/tryone144/compton ./compton
+cd compton
+make
+make install
 yay -Sy nerd-fonts-hack
 yay -Sy nvim-packer-git
 
