@@ -3,6 +3,9 @@ ping -c 3 google.com
 timedatectl set-ntp true
 timedatectl status
 cfdisk /dev/sda
+#pacman color
+echo "Color" >> /etc/pacman.conf
+echo "ILoveCandy" >> /etc/pacman.conf
 
 # format
 mkfs.vfat /dev/sda1
