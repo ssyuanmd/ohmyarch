@@ -30,6 +30,6 @@ print_date(){
 
 while true
 do
-	xsetroot -name " $(print_wifi) $(print_bat)  $(print_date)"
+	xsetroot -name " $(print_wifi) $(print_bat)  $(print_date)  "
 	sleep 60
 done

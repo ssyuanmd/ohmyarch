@@ -15,6 +15,7 @@ yes | sudo pacman -Syu
 	"fcitx-chewing"
 	"git"
 	"htop"
+	"tree"
 	"ranger"
 	"trash-cli"
 	"links"
@@ -39,12 +40,9 @@ git clone https://aur.archlinux.org/yay.git
 cd yay
 makepkg -si
 #compton
-https://github.com/tryone144/compton ./compton
-cd compton
-make
-make install
-yay -Sy nerd-fonts-hack
-yay -Sy nvim-packer-git
+yay picom-jonaburg-git
+yay nerd-fonts-hack
+yay nvim-packer-git
 
 # fcitx
 cowsay "fcitx"

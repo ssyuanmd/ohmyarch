@@ -54,5 +54,7 @@ check_all () {
 	if !(check_dir_exist $key); then
 	    echo "${RED}check failed: $key${RESET}"
 	fi
+	cd ~/
+	tree -L 2 -A -a
     done
 }
