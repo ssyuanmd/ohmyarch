@@ -2,7 +2,7 @@
 install_desktop() {
 
 # dotfile
-git clone https://github.com/ssyuanmd/dotfile ~/
+git clone https://github.com/ssyuanmd/dotfile ~/dotfile
 
 # .bashrc
 cp ~/dotfile/.bashrc ~/
@@ -21,7 +21,7 @@ cp ~/dotfile/.xinitrc ~/
 # dwm
 echo "DWM" | figlet
 git clone https://git.suckless.org/dwm ~/.config/dwm
-cp ~/dotfile/config.h ~/.config/dwm
+cp ~/dotfile/config.h ~/.config/dwm/config.h
 cd ~/.config/dwm && sudo make install
 
 #feh
