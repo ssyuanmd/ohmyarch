@@ -1,6 +1,6 @@
 #!/bin/bash
 install_neovim() {
-cowsay "neovim"
+echo "neovim" | figlet
 git clone https://github.com/ssyuanmd/neovim ~/.config/nvim
 
 # packer

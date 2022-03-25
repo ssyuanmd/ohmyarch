@@ -1,11 +1,13 @@
 #!/bin/bash
 install_dependency() {
+echo "dependency" | figlet
 yes | sudo pacman -Syu
 	tools=(
+	"acpi"
 	"alsemixer"
 	"alsa-utils"
 	"base-devel"
-	"cowsay"
+	"figlet"
 	"clang"
 	"dmenu"
 	"firefox"
@@ -15,7 +17,6 @@ yes | sudo pacman -Syu
 	"fcitx-chewing"
 	"git"
 	"htop"
-	"tree"
 	"ranger"
 	"trash-cli"
 	"links"
@@ -35,17 +36,17 @@ done
 
 
 # AUR
-cowsay "AUR"
+echo "AUR" | figlet
 git clone https://aur.archlinux.org/yay.git
 cd yay
 makepkg -si
-#compton
+# picom
+yay ly-git
 yay picom-jonaburg-git
 yay nerd-fonts-hack
 yay nvim-packer-git
 
 # fcitx
-cowsay "fcitx"
 printf "export GTK_IM_MODULE=fcitx
 export QT_IM_MODULE=fcitx
 export XMODIFIERS=@im=fcitx
