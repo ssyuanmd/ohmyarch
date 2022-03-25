@@ -42,6 +42,7 @@ yay ly-git
 yay picom-jonaburg-git
 yay nerd-fonts-hack
 yay nvim-packer-git
+yay xsetroot
 
 # fcitx
 printf "export GTK_IM_MODULE=fcitx
