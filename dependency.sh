@@ -7,6 +7,7 @@ yes | sudo pacman -Syu
 	"alsemixer"
 	"alsa-utils"
 	"base-devel"
+	"ttf-droid"
 	"figlet"
 	"clang"
 	"dmenu"
