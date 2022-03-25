@@ -3,7 +3,7 @@ install_dependency() {
 echo "dependency" | figlet
 yes | sudo pacman -Syu
 	tools=(
-	"acpi"
+	"alacritty"
 	"alsemixer"
 	"alsa-utils"
 	"base-devel"
@@ -13,22 +13,19 @@ yes | sudo pacman -Syu
 	"firefox"
 	"fcitx-im"
 	"fcitx-configtool"
-	"ninja"
 	"fcitx-chewing"
+	"ninja"
+	"neovim"
 	"git"
 	"htop"
 	"ranger"
 	"trash-cli"
-	"links"
 	"xorg-server"
 	"xorg-xinit"
 	"xorg-xrandr"
 	"libxinerama"
 	"libxft"
-	"base-devel"
 	"feh"
-	"alacritty"
-	"neovim"
 	)
 for tool in ${tools[@]}; do
 	sudo pacman -S --needed --noconfirm $tool
